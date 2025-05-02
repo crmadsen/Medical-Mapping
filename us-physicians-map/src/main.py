@@ -1,6 +1,7 @@
-from data_processing import ensure_database, load_cached_data, filter_and_calculate_distances
-from plotting import show_map
+from src.data_processing import ensure_database, load_cached_data, filter_and_calculate_distances
+from src.plotting import show_map
 import streamlit as st
+
 # Set the page layout to wide
 st.set_page_config(page_title="Specialist Physicians Map", layout="wide")
 
@@ -10,8 +11,8 @@ city_state_file_path = 'us-physicians-map/data/city_state.csv'
 
 def main():
 
-    # Ensure the database is created (cached)
-    ensure_database(csv_file_path, database_path, city_state_file_path)
+    # # Ensure the database is created (cached)
+    # ensure_database(csv_file_path, database_path, city_state_file_path)
 
     # Load the data (cached)
     data = load_cached_data(database_path)
