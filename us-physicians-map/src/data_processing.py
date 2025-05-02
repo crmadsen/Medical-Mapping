@@ -164,7 +164,7 @@ def filter_and_calculate_distances(data, selected_specialties):
     )
 
     # Filter to include only doctors within a 300-mile radius
-    filtered_data = filtered_data[filtered_data['distance_to_farmington'] <= 500]
+    filtered_data = filtered_data[filtered_data['distance_to_farmington'] <= 250]
 
     print(f"Filtered data size: {len(filtered_data)}")
     return filtered_data
