@@ -1,5 +1,5 @@
-from src.data_processing import load_cached_data, filter_and_calculate_distances
-from src.plotting import show_map
+from .data_processing import load_cached_data, filter_and_calculate_distances
+from .plotting import show_map
 import streamlit as st
 
 # Set the page layout to wide
