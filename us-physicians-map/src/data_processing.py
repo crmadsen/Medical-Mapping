@@ -1,5 +1,3 @@
-from geopy.geocoders import Nominatim
-from geopy.exc import GeocoderTimedOut
 import pandas as pd
 import sqlite3
 import os
@@ -7,17 +5,6 @@ import unicodedata
 import re
 import streamlit as st
 import numpy as np
-
-def geocode_location(city, state, geolocator, max_retries=3):
-    """Geocode a city and state to get latitude and longitude."""
-    for attempt in range(max_retries):
-        try:
-            location = geolocator.geocode(f"{city}, {state}")
-            if location:
-                return location.latitude, location.longitude
-        except GeocoderTimedOut:
-            print(f"Geocoding timed out for {city}, {state}. Retrying ({attempt + 1}/{max_retries})...")
-    return None, None
 
 def normalize_string(s):
     """Normalize strings by removing accents, converting to lowercase, and stripping extra spaces."""
