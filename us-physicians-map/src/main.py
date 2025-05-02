@@ -1,6 +1,5 @@
 from data_processing import ensure_database, load_cached_data, filter_and_calculate_distances
 from plotting import show_map
-
 import streamlit as st
 # Set the page layout to wide
 st.set_page_config(page_title="Specialist Physicians Map", layout="wide")

@@ -1,5 +1,5 @@
-pandas
-matplotlib
-folium
-geopandas
-ipywidgets
+folium==0.19.5
+numpy==2.2.5
+pandas==2.2.3
+streamlit==1.45.0
+streamlit_folium==0.25.0
