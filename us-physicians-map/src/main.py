@@ -1,4 +1,4 @@
-from src.data_processing import ensure_database, load_cached_data, filter_and_calculate_distances
+from src.data_processing import load_cached_data, filter_and_calculate_distances
 from src.plotting import show_map
 import streamlit as st
 
